@@ -30,7 +30,10 @@ public class Cociente {
 	 * @return Producto de a * b
 	 * Si el resultado de la division el resto no es 0 no devuelve el resto puedes consultar el resto con el metodo {@link resto} 
 	 */
-
+	public static int dividir(int a, int b) {
+		int c = a / b ;
+		return c;
+	}
 	
 	/**
 	 * Resto de la división de dos numeros enteros

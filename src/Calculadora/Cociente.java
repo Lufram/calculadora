@@ -18,7 +18,10 @@ public class Cociente {
 	 * @param b divisor.
 	 * @return Producto de a / b
 	 */
-	
+	public static double dividir(double a, double b) {
+		double c = a / b ;
+		return c;
+	}
 	/**
 	 * División  de dos números enteros.
 	 * 

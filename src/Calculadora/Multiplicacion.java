@@ -58,4 +58,9 @@ public class Multiplicacion {
 	 * @return a elevado a b.
 	 */
 	
+	public static double potencia(int a, int b) {
+		double c = a^b ;
+		return c;
+	}
+	
 }

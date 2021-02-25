@@ -42,6 +42,11 @@ public class Resta {
 	 * @param c segunda variable que restaremos a la variable a.
 	 * @return La resta de a - b - c
 	 */
+	
+	public static double restar(double a, double b, double c) {
+		double d = a - b - c ;
+		return d;
+	}
 
 	/**
 	 * Resta con valor acumulado.

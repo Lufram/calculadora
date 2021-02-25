@@ -20,6 +20,10 @@ public class Multiplicacion {
 	 * @return Producto de a * b
 	 */
 	
+	public static double multiplicar(double a, double b) {
+		return a*b;
+	}
+	
 	/**
 	 * Producto de dos números enteros.
 	 * 

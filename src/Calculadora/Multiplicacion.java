@@ -31,7 +31,8 @@ public class Multiplicacion {
 	 * @param b Segundo parametro.
 	 * @return Producto de a * b
 	 */
-	
+	public static int multiplicar(int a, int b) {
+		return a*b;
 	
 	/**
 	 * Producto de tres números reales.

@@ -48,6 +48,10 @@ public class Suma {
 	 * @param c Tercer parametro de la suma
 	 * @return La suma de a + b + c
 	 */
+	public static double sumar(double a, double b, double c) {
+		double d = a + b + c ;
+		return d;
+	}
 	
 	/**
 	 * Suma con valor acumulado.

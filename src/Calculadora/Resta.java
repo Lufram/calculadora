@@ -30,9 +30,7 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
-	public static int resta(int a, int b) {
-		return a - b;
-	}
+	
 	
 	/**
 	 * Resta de tres números reales.
@@ -43,10 +41,7 @@ public class Resta {
 	 * @return La resta de a - b - c
 	 */
 	
-	public static double restar(double a, double b, double c) {
-		double d = a - b - c ;
-		return d;
-	}
+	
 
 	/**
 	 * Resta con valor acumulado.

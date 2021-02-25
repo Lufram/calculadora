@@ -1,7 +1,7 @@
 package Calculadora;
 
 /**
- * Esta clase implementar� todos los m�todos que est�n relacionados con los cocientes de la calculadora.
+ * Esta clase implementa todos los metodos que estan relacionados con los cocientes de la calculadora.
  * <br>
  * Esta calculadora no admite numeros negativos ni 0 como argumentos.
  * @author Ismael
@@ -12,7 +12,7 @@ package Calculadora;
 public class Cociente {
 
 	/**
-	 * Divisi�n  de dos n�meros reales.
+	 * Division  de dos numeros reales.
 	 * 
 	 * @param a dividendo.
 	 * @param b divisor.
@@ -23,7 +23,7 @@ public class Cociente {
 		return c;
 	}
 	/**
-	 * Divisi�n  de dos n�meros enteros.
+	 * Division  de dos numeros enteros.
 	 * 
 	 * @param a dividendo.
 	 * @param b divisor.
@@ -36,7 +36,7 @@ public class Cociente {
 	}
 	
 	/**
-	 * Resto de la divisi�n de dos numeros enteros
+	 * Resto de la division de dos numeros enteros
 	 * @param a dividendo
 	 * @param b divisor
 	 * @return Resto de dividir a/b
@@ -49,7 +49,7 @@ public class Cociente {
 	
 	
 	/**
-	 * Inverso de un n�mero real.
+	 * Inverso de un numero real.
 	 * 
 	 * @param a variable a invertir.
 	 * @return Inverso de a.
@@ -60,11 +60,15 @@ public class Cociente {
 	
 	
 	/**
-	 * Ra�z de un n�mero.
+	 * Raiz de un numero.
 	 *
 	 * @param a variable a la que realizaremos la raiz cuadrada.
 	 * @return Raiz cuadrada de a.
 	 */
+	public static double raiz(int a) {
+		double b = Math.sqrt(a) ;
+		return b;
+	}
 	
 	
 }

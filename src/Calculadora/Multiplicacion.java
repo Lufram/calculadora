@@ -1,7 +1,7 @@
 package Calculadora;
 
 /**
- * Esta clase implementará todos los métodos que están relacionados con la multiplicacion de la calculadora.
+ * Esta clase implementarï¿½ todos los mï¿½todos que estï¿½n relacionados con la multiplicacion de la calculadora.
  * <br>
  * Esta calculadora no admite numeros negativos.
 
@@ -13,7 +13,7 @@ package Calculadora;
 public class Multiplicacion {
 
 	/**
-	 * Producto de dos números reales.
+	 * Producto de dos nï¿½meros reales.
 	 * 
 	 * @param a Primer parametro.
 	 * @param b Segundo parametro.
@@ -25,7 +25,7 @@ public class Multiplicacion {
 	}
 	
 	/**
-	 * Producto de dos números enteros.
+	 * Producto de dos nï¿½meros enteros.
 	 * 
 	 * @param a Primer parametro.
 	 * @param b Segundo parametro.
@@ -36,13 +36,18 @@ public class Multiplicacion {
 	}
 
 	/**
-	 * Producto de tres números reales.
+	 * Producto de tres nï¿½meros reales.
 	 * 
 	 * @param a Primer parametro.
 	 * @param b Segundo parametro.
 	 * @param c Tercer parametro.
 	 * @return La resta de a * b * c
 	 */
+	
+	public static double multiplicar(double a, double b, double c) {
+		double d = a * b * c ;
+		return d;
+	}
 	
 	
 	/**

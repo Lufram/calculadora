@@ -19,7 +19,7 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
-	public static double resta(double a, double b) {
+	public static double restar(double a, double b) {
 		return a - b;
 	}
 
@@ -30,7 +30,7 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
-	public static int resta(int a, int b) {
+	public static int restar(int a, int b) {
 		return a - b;
 	}
 	

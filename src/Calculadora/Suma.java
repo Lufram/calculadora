@@ -34,6 +34,11 @@ public class Suma {
 	 * @return La suma de a + b
 	 */
 	
+	public static int sumar(int a, int b) {
+		int c = a + b ;
+		return c;
+	}
+	
 	
 	/**
 	 * Suma de tres n�meros reales.

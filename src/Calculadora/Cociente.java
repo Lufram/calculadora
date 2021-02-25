@@ -54,7 +54,9 @@ public class Cociente {
 	 * @param a variable a invertir.
 	 * @return Inverso de a.
 	 */
-	
+	public static double inverso(double a) {
+		return 1/a;
+	}
 	
 	
 	/**

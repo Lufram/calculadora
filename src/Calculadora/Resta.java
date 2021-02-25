@@ -44,6 +44,10 @@ public class Resta {
 	 * @return La resta de a - b - c
 	 */
 	
+	public static double restar(double a, double b, double c) {
+		double d = a - b - c ;
+		return d;
+	}
 	
 
 	/**

@@ -30,6 +30,9 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+	public static int resta(int a, int b) {
+		return a - b;
+	}
 	
 	
 	/**

@@ -5,7 +5,7 @@ package Calculadora;
  * <br>
  * Esta calculadora no admite numeros negativos
 
- * @author Isa
+ * @author Alberto, Javier, Ismael
  * @version 1
  * 
  */
@@ -19,6 +19,9 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+	public static double resta(double a, double b) {
+		return a - b;
+	}
 
 	/**
 	 * Resta de dos números enteros.

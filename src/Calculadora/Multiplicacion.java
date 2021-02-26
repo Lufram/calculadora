@@ -49,7 +49,6 @@ public class Multiplicacion {
 		return d;
 	}
 	
-	
 	/**
 	 * Potencia.
 	 *

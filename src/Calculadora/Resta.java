@@ -19,6 +19,11 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+	
+	public static double restar(double a, double b) {
+		double c = a - b ;
+		return c;
+	}
 
 	/**
 	 * Resta de dos n�meros enteros.
@@ -27,6 +32,11 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+	
+	public static int restar(int a, int b) {
+		int c = a - b ;
+		return c;
+	}
 	
 	/**
 	 * Resta de tres n�meros reales.

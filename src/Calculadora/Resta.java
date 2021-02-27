@@ -5,7 +5,7 @@ package Calculadora;
  * <br>
  * Esta calculadora no admite numeros negativos
 
- * @author Isa
+ * @author Alberto, Javier, Ismael
  * @version 1
  * 
  */
@@ -19,6 +19,9 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+	public static double restar(double a, double b) {
+		return a - b;
+	}
 
 	/**
 	 * Resta de dos n�meros enteros.
@@ -27,6 +30,10 @@ public class Resta {
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+	public static int restar(int a, int b) {
+		return a - b;
+	}
+	
 	
 	/**
 	 * Resta de tres n�meros reales.
@@ -36,14 +43,16 @@ public class Resta {
 	 * @param c segunda variable que restaremos a la variable a.
 	 * @return La resta de a - b - c
 	 */
-	
 	public static double restar(double a, double b, double c) {
 		double d = a - b - c ;
 		return d;
 	}
 	
-	static int acum = 0;
 
+=======
+	
+
+	static int acum = 0;
 	/**
 	 * Resta con valor acumulado.
 	 * Este metodo no se puede utilizar por que no no acepta valores negativos

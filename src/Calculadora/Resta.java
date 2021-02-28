@@ -1,11 +1,11 @@
 package Calculadora;
 
 /**
- * Esta clase implementar� todos los m�todos que est�n relacionados con la restas de la calculadora.
- * <br>
+ * Esta clase implementará todos los métodos que están relacionados con la restas de la calculadora.
+
  * Esta calculadora no admite numeros negativos
 
- * @author Isa
+ * @author Alberto, Javier, Ismael
  * @version 1
  * 
  */
@@ -13,12 +13,13 @@ package Calculadora;
 public class Resta {
 	
 	/**
-	 * Resta de dos n�meros reales.
+	 * Resta de dos números reales.
 	 * 
 	 * @param a variable a la que le restaremos b.
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+
 	
 	public static double restar(double a, double b) {
 		double c = a - b ;
@@ -26,12 +27,14 @@ public class Resta {
 	}
 
 	/**
-	 * Resta de dos n�meros enteros.
-	 * 
+   * Resta de dos numeros enteros.
+   *
 	 * @param a variable a la que le restaremos b.
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
+  *
+
 	
 	public static int restar(int a, int b) {
 		int c = a - b ;
@@ -39,7 +42,7 @@ public class Resta {
 	}
 	
 	/**
-	 * Resta de tres n�meros reales.
+	 * Resta de tres números reales.
 	 * 
 	 * @param a variable a la que le restaremos b y c.
 	 * @param b primera variable que restaremos a la variable a.
@@ -52,7 +55,7 @@ public class Resta {
 		return d;
 	}
 	
-	static int acum = 0;
+        	
 
 	/**
 	 * Resta con valor acumulado.
@@ -60,9 +63,11 @@ public class Resta {
 	 * @param a variable que restaremos al acumulado.
 	 * @return el valor acumulado menos el valor de a.
 	 */
+  
+  static int acum = 0;
 	public static int restar(int a) {
 		acum = acum - a ;
 		return acum;
 	}
-	
+
 }

@@ -11,7 +11,6 @@ public class TestSuma {
 		System.out.println("Segundo método: " + Suma.sumar(96, 54));
 		System.out.println("Tercer método: " + Suma.sumar(35.42, 2.15, 7.64));
 		
-
 		Suma.acum= 23.5;
 		System.out.println("Cuarto método: " + Suma.sumar(65.3));
 		

@@ -1,18 +1,26 @@
-  
-package Test;
+TestMultiplicacion
+package TestCalc;
 
 import Calculadora.Multiplicacion;
 import Calculadora.Cociente;
+
 
 public class TestCalc {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Primer mÈtodo : " + Cociente.dividir(23, 12));
-		System.out.println("Primer mÈtodo : " + Cociente.resto(23, 12));
-		System.out.println("Segundo mÈtodo : " + Cociente.dividir(12.2, 3.5));
-		System.out.println("Tercer mÈtodo : " + Cociente.inverso(5));
-		System.out.println("Cuarto mÈtodo : " + Cociente.raiz(9));
+
+		System.out.println("Primer m√©todo : " + Multiplicacion.multiplicar(3, 6));
+		System.out.println("Segundo m√©todo : " + Multiplicacion.multiplicar(12, 5));
+		System.out.println("Tercer m√©todo : " + Multiplicacion.multiplicar(4, 5, 6));
+		System.out.println("Cuarto m√©todo : " + Multiplicacion.potencia(2, 6));
+
+		System.out.println("Primer m√©todo resultado : " + Cociente.dividir(23, 12));
+		System.out.println("Primer m√©todo resto : " + Cociente.resto(23, 12));
+		System.out.println("Segundo m√©todo : " + Cociente.dividir(12.2, 3.5));
+		System.out.println("Tercer m√©todo : " + Cociente.inverso(5));
+		System.out.println("Cuarto m√©todo : " + Cociente.raiz(9));
 	}
 
 }
+

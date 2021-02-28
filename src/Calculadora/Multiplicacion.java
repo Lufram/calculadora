@@ -41,14 +41,13 @@ public class Multiplicacion {
 	 * @param a Primer parametro.
 	 * @param b Segundo parametro.
 	 * @param c Tercer parametro.
-	 * @return La resta de a * b * c
+	 * @return El producto de a * b * c
 	 */
 	
 	public static double multiplicar(double a, double b, double c) {
 		double d = a * b * c ;
 		return d;
 	}
-	
 	
 	/**
 	 * Potencia.

@@ -2,7 +2,7 @@ package Calculadora;
 
 
 /**
- * Esta clase implementará todos los métodos que están relacionados con la sumas de la calculadora.
+ * Esta clase implementarï¿½ todos los mï¿½todos que estï¿½n relacionados con la sumas de la calculadora.
  * <br>
  * Esta calculadora no admite nnumeros negativos
  * 
@@ -14,30 +14,44 @@ package Calculadora;
 public class Suma {	
 	
 	/**
-	 * Suma de dos números reales.
+	 * Suma de dos nï¿½meros reales.
 	 * 
 	 * @param a Primer parametro de la suma.
 	 * @param b Segundo parametro de la suma. 
 	 * @return La suma de a + b.
 	 */
 	
+	public static double sumar(double a, double b) {
+		double c = a + b ;
+		return c;
+	}
+	
 	/**
-	 * Suma de dos números enteros.
+	 * Suma de dos nï¿½meros enteros.
 	 * 
 	 * @param a Primer parametro de la suma.
 	 * @param b Segundo parametro de la suma.
 	 * @return La suma de a + b
 	 */
 	
+	public static int sumar(int a, int b) {
+		int c = a + b ;
+		return c;
+	}
+	
 	
 	/**
-	 * Suma de tres números reales.
+	 * Suma de tres nï¿½meros reales.
 	 * 
 	 * @param a Primer parametro de la suma.
 	 * @param b Segundo parametro de la suma.
 	 * @param c Tercer parametro de la suma
 	 * @return La suma de a + b + c
 	 */
+	public static double sumar(double a, double b, double c) {
+		double d = a + b + c ;
+		return d;
+	}
 	
 	/**
 	 * Suma con valor acumulado.
@@ -45,5 +59,10 @@ public class Suma {
 	 * @param a El valor que sumaremos al acumulador.
 	 * @return La suma de a mas el valor acumulado.
 	 */
-	
+	static int acm = 0;
+
+	public static int sumar(int a) {
+		
+		return a + acm;
+	}
 }

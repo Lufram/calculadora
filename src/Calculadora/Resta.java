@@ -27,13 +27,13 @@ public class Resta {
 	}
 
 	/**
-   * Resta de dos numeros enteros.
-   *
+         * Resta de dos numeros enteros.
+  
 	 * @param a variable a la que le restaremos b.
 	 * @param b variable que restaremos a la variable a.
 	 * @return La resta de a - b
 	 */
-  *
+  
 
 	
 	public static int restar(int a, int b) {

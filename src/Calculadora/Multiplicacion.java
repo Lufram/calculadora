@@ -1,7 +1,7 @@
 package Calculadora;
 
 /**
- * Esta clase implementar� todos los m�todos que est�n relacionados con la multiplicacion de la calculadora.
+ * Esta clase implementaria todos los metodos que estan relacionados con la multiplicacion de la calculadora.
  * <br>
  * Esta calculadora no admite numeros negativos.
 
@@ -13,7 +13,7 @@ package Calculadora;
 public class Multiplicacion {
 
 	/**
-	 * Producto de dos n�meros reales.
+	 * Producto de dos numeros reales.
 	 * <br>
 	 * <ul>Casos escpeciales
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
@@ -36,7 +36,7 @@ public class Multiplicacion {
 	}
 	
 	/**
-	 * Producto de dos n�meros enteros.
+	 * Producto de dos numeros enteros.
 	 * <br>
 	 * <ul>Casos escpeciales
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
@@ -58,7 +58,7 @@ public class Multiplicacion {
 	}
 
 	/**
-	 * Producto de tres n�meros reales.
+	 * Producto de tres numeros reales.
 	 * <br>
 	 * <ul>Casos escpeciales
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0

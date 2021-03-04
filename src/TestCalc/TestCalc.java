@@ -15,13 +15,12 @@ public class TestCalc {
 		System.out.println("Primer método: " + Suma.sumar(5.5, 9.36));
 		System.out.println("Segundo método: " + Suma.sumar(96, 54));
 		System.out.println("Tercer método: " + Suma.sumar(35.42, 2.15, 7.64));	
-		Suma.acum= 23.5;
-		System.out.println("Cuarto método: " + Suma.sumar(65.3));		
+		System.out.println("Cuarto método: " + Suma.sumar(65));		
 
 		System.out.println("Primer método : " + Resta.restar(5,4) );
 		System.out.println("Segundo método : " + Resta.restar(7, 3) );
 		System.out.println("Tercer método : " + Resta.restar(10, 2, 1) );
-    System.out.println("Cuarto método : ") + Resta.restar(5) );
+		System.out.println("Cuarto método : " + Resta.restar(5) );
 
 		System.out.println("Primer método : " + Multiplicacion.multiplicar(3, 6));
 		System.out.println("Segundo método : " + Multiplicacion.multiplicar(12, 5));

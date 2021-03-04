@@ -60,10 +60,9 @@ public class Suma {
 	 * @return La suma de a mas el valor acumulado.
 	 */
 	static int acm = 0;
-	
+
 	public static int sumar(int a) {
 		
 		return a + acm;
 	}
-	
 }

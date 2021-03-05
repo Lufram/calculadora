@@ -41,7 +41,7 @@ public class Multiplicacion {
 	 * <ul>Casos escpeciales
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
-	 * 		<li> Si alguno de los valores es infinito, el resultado sera infinito
+	 * 		<li> Si alguno de los valores es infinito, el resultado sera un numero positivo
 	 * 		<li> Si alguno de los valores es Nan , el resultado sera Nan
 	 * </ul>
 	 * 
@@ -90,7 +90,6 @@ public class Multiplicacion {
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
 	 * 		<li> Si alguno de los valores es infinito, el resultado sera infinito
 	 * 		<li> Si alguno de los valores es Nan , el resultado sera Nan
-	 * 		<li> Si los numeros pasados son muy grandes levanta una excepcion
 	 * </ul>
 	 * 
 	 * @param a Base
@@ -98,11 +97,11 @@ public class Multiplicacion {
 	 * @return a elevado a b.
 	 */
 	
-	public static double potencia(int a, int b) {
+	public static double potencia(double a, double b) {
 		if (a < 0 || b < 0) {
 			throw new IncorrectValueException();
 		} else {
-			double c = a ^ b;
+			double c = Math.pow(a, b);
 			return c;
 		}
 

@@ -17,10 +17,10 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDouble() {
 		// 1 Arrange - Preparar
-		Double val1 = 10.6;
-		Double val2 = 0.5;
-		Double resultado;
-		Double esperado = 5.3;
+		double val1 = 10.6;
+		double val2 = 0.5;
+		double resultado;
+		double esperado = 5.3;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -34,10 +34,10 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleFirstValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 0.0;
-		Double val2 = 0.5;				
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 0.0;
+		double val2 = 0.5;				
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -50,10 +50,10 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleSecondValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 0.5;
-		Double val2 = 0.0;				
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 0.5;
+		double val2 = 0.0;				
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -67,10 +67,10 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleAllValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 0.0;
-		Double val2 = 0.0;				
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 0.0;
+		double val2 = 0.0;				
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -83,8 +83,8 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleFirstValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = -2.3;
-		Double val2 = 0.5;				
+		double val1 = -2.3;
+		double val2 = 0.5;				
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2);
@@ -98,8 +98,8 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleSecondValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = 2.3;
-		Double val2 = -0.5;				
+		double val1 = 2.3;
+		double val2 = -0.5;				
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2);
@@ -113,8 +113,8 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleSecondAllNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = -2.3;
-		Double val2 = -0.5;				
+		double val1 = -2.3;
+		double val2 = -0.5;				
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2);
@@ -129,11 +129,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleFirstInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.POSITIVE_INFINITY;
-		Double val2 = 5.1;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = Double.POSITIVE_INFINITY;
+		double val2 = 5.1;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2);
+		double resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -143,11 +143,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleSecondInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = 5.1;
-		Double val2 = Double.POSITIVE_INFINITY;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = 5.1;
+		double val2 = Double.POSITIVE_INFINITY;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2);
+		double resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -157,11 +157,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleAllInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.POSITIVE_INFINITY;
-		Double val2 = Double.POSITIVE_INFINITY;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = Double.POSITIVE_INFINITY;
+		double val2 = Double.POSITIVE_INFINITY;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2);
+		double resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -171,11 +171,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleFirstNan() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.NaN;
-		Double val2 = 2.0;
-		Double esperado = Double.NaN;
+		double val1 = Double.NaN;
+		double val2 = 2.0;
+		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2);
+		double resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
@@ -185,11 +185,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleSecondNan() {
 		// 1 Arrange - Preparar
-		Double val1 = 2.0;
-		Double val2 = Double.NaN;
-		Double esperado = Double.NaN;
+		double val1 = 2.0;
+		double val2 = Double.NaN;
+		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2);
+		double resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
@@ -402,11 +402,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDouble() {
 		// 1 Arrange - Preparar
-		Double val1 = 10.5;
-		Double val2 = 5.5;
-		Double val3 = 8.5;
-		Double resultado;
-		Double esperado = 490.875;
+		double val1 = 10.5;
+		double val2 = 5.5;
+		double val3 = 8.5;
+		double resultado;
+		double esperado = 490.875;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -420,11 +420,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 0.0;
-		Double val2 = 5.5;
-		Double val3 = 8.5;
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 0.0;
+		double val2 = 5.5;
+		double val3 = 8.5;
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -437,11 +437,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 5.5;
-		Double val2 = 0.0;
-		Double val3 = 8.5;
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 5.5;
+		double val2 = 0.0;
+		double val3 = 8.5;
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -454,11 +454,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 5.5;
-		Double val2 = 8.5;
-		Double val3 = 0.0;
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 5.5;
+		double val2 = 8.5;
+		double val3 = 0.0;
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -522,11 +522,11 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllValZero() {
 		// 1 Arrange - Preparar
-		Double val1 = 0.0;
-		Double val2 = 0.0;
-		Double val3 = 0.0;
-		Double resultado;
-		Double esperado = 0.0;
+		double val1 = 0.0;
+		double val2 = 0.0;
+		double val3 = 0.0;
+		double resultado;
+		double esperado = 0.0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -539,9 +539,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = -2.2;
-		Double val2 = 5.3;
-		Double val3 = 8.6;
+		double val1 = -2.2;
+		double val2 = 5.3;
+		double val3 = 8.6;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -555,9 +555,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = 3.5;
-		Double val2 = -5.2;
-		Double val3 = 8.6;
+		double val1 = 3.5;
+		double val2 = -5.2;
+		double val3 = 8.6;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -571,9 +571,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = 3.5;
-		Double val2 = 5.2;
-		Double val3 = -8.6;
+		double val1 = 3.5;
+		double val2 = 5.2;
+		double val3 = -8.6;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -587,9 +587,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstAndThirdValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = -3.5;
-		Double val2 = 5.2;
-		Double val3 = -8.6;
+		double val1 = -3.5;
+		double val2 = 5.2;
+		double val3 = -8.6;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -603,9 +603,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondtAndThirdValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = 3.5;
-		Double val2 = -5.2;
-		Double val3 = -8.6;
+		double val1 = 3.5;
+		double val2 = -5.2;
+		double val3 = -8.6;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -619,9 +619,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstAndSecondtdValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = -3.5;
-		Double val2 = -5.2;
-		Double val3 = 8.6;
+		double val1 = -3.5;
+		double val2 = -5.2;
+		double val3 = 8.6;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -636,9 +636,9 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllValNegative() {
 		// 1 Arrange - Preparar
-		Double val1 = -3.2;
-		Double val2 = -5.3;
-		Double val3 = -3.5;
+		double val1 = -3.2;
+		double val2 = -5.3;
+		double val3 = -3.5;
 		try {
 			// 3 Act - Ejecutar
 			Multiplicacion.multiplicar(val1, val2, val3);
@@ -653,12 +653,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.POSITIVE_INFINITY;
-		Double val2 = 5.5;
-		Double val3 = 3.5;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = Double.POSITIVE_INFINITY;
+		double val2 = 5.5;
+		double val3 = 3.5;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -668,12 +668,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = 5.5;
-		Double val2 = Double.POSITIVE_INFINITY;
-		Double val3 = 3.5;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = 5.5;
+		double val2 = Double.POSITIVE_INFINITY;
+		double val3 = 3.5;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -683,12 +683,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = 5.5;
-		Double val2 = 3.5;
-		Double val3 = Double.POSITIVE_INFINITY;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = 5.5;
+		double val2 = 3.5;
+		double val3 = Double.POSITIVE_INFINITY;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -698,12 +698,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllInfinity() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.POSITIVE_INFINITY;
-		Double val2 = Double.POSITIVE_INFINITY;
-		Double val3 = Double.POSITIVE_INFINITY;
-		Double esperado = Double.POSITIVE_INFINITY;
+		double val1 = Double.POSITIVE_INFINITY;
+		double val2 = Double.POSITIVE_INFINITY;
+		double val3 = Double.POSITIVE_INFINITY;
+		double esperado = Double.POSITIVE_INFINITY;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
@@ -713,12 +713,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstNan() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.NaN;
-		Double val2 = 2.5;
-		Double val3 = 3.5;
-		Double esperado = Double.NaN;
+		double val1 = Double.NaN;
+		double val2 = 2.5;
+		double val3 = 3.5;
+		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
@@ -728,12 +728,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondNan() {
 		// 1 Arrange - Preparar
-		Double val1 = 2.5;
-		Double val2 = Double.NaN;
-		Double val3 = 3.5;
-		Double esperado = Double.NaN;
+		double val1 = 2.5;
+		double val2 = Double.NaN;
+		double val3 = 3.5;
+		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
@@ -743,12 +743,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdNan() {
 		// 1 Arrange - Preparar
-		Double val1 = 2.5;
-		Double val2 = 3.2;
-		Double val3 = Double.NaN;
-		Double esperado = Double.NaN;
+		double val1 = 2.5;
+		double val2 = 3.2;
+		double val3 = Double.NaN;
+		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
@@ -759,12 +759,12 @@ class MultiplicacionTest {
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllNan() {
 		// 1 Arrange - Preparar
-		Double val1 = Double.NaN;
-		Double val2 = Double.NaN;
-		Double val3 = Double.NaN;
-		Double esperado = Double.NaN;
+		double val1 = Double.NaN;
+		double val2 = Double.NaN;
+		double val3 = Double.NaN;
+		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.multiplicar(val1, val2, val3);
+		double resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
@@ -964,7 +964,7 @@ class MultiplicacionTest {
 		double val2 = Double.NaN;
 		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
-		Double resultado = Multiplicacion.potencia(val1, val2);
+		double resultado = Multiplicacion.potencia(val1, val2);
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}

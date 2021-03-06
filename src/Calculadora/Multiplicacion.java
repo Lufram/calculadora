@@ -91,7 +91,9 @@ public class Multiplicacion {
 	 *<br>
 	 *<p> Casos escpeciales</p>
 	 * <ul>
-	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
+	 * 		<li> Si el parametro a es 0, el resultado sera 0.
+	 * 		<li> Si el parametro b es 0, el resultado sera 1.
+	 * 		<li> Si los dos parametros son 0, el resultado sera 1. 
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
 	 * 		<li> Si alguno de los valores es infinito, el resultado sera infinito
 	 * 		<li> Si alguno de los valores es Nan , el resultado sera Nan

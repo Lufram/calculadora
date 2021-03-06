@@ -10,7 +10,6 @@ import Calculadora.Multiplicacion;
 class MultiplicacionTest {
 	/**
 	 *  Multiplicar Double Double
-	 *
 	 *  
 	 *  Evalua si multiplicar devuelve un resultado correcto
 	 */
@@ -29,15 +28,15 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el primer parametro levanta la excepcion
+	 * Evalua si al introducir 0 en el primer devuelve 0.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleFirstValZero() {
 		// 1 Arrange - Preparar
-		double val1 = 0.0;
+		double val1 = 0;
 		double val2 = 0.5;				
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -45,15 +44,15 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua en el si al introducir 0 en el segundo parametro levanta la excepcion
+	 * Evalua en el si al introducir 0 devuelve 0.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleSecondValZero() {
 		// 1 Arrange - Preparar
 		double val1 = 0.5;
-		double val2 = 0.0;				
+		double val2 = 0;				
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -61,16 +60,16 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en los dos parametros levanta la excepcion
+	 * Evalua en el si al introducir 0 devuelve 0.
 	 */
 	
 	@Test
 	void testMultiplicarDoubleDoubleAllValZero() {
 		// 1 Arrange - Preparar
-		double val1 = 0.0;
-		double val2 = 0.0;				
+		double val1 = 0;
+		double val2 = 0;				
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
@@ -78,7 +77,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor negativo en el primer patametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levannta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleFirstValNegative() {
@@ -93,7 +92,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en el segundo patametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levannta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleSecondValNegative() {
@@ -108,7 +107,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en los dos parametros levanta la excepcion
+	 * Evalua en el si al introducir dos valor negativos levanta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleSecondAllNegative() {
@@ -124,7 +123,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor infinito en el primer parametro devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleFirstInfinity() {
@@ -138,7 +137,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en el segundo parametro devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleSecondInfinity() {
@@ -166,13 +165,13 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor NaN en el primer parametro devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleFirstNan() {
 		// 1 Arrange - Preparar
 		double val1 = Double.NaN;
-		double val2 = 2.0;
+		double val2 = 2.2;
 		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
 		double resultado = Multiplicacion.multiplicar(val1, val2);
@@ -180,12 +179,12 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
 	/**
-	 * Evalua si al introducir un valor NaN en el segundo parametro devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleSecondNan() {
 		// 1 Arrange - Preparar
-		double val1 = 2.0;
+		double val1 = 2.2;
 		double val2 = Double.NaN;
 		double esperado = Double.NaN;
 		// 3 Act - Ejecutar
@@ -215,7 +214,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el primer parametro devuelve 0
+	 * Evalua si al introducir un valor 0 devuelve 0.
 	 */
 	@Test
 	void testMultiplicarIntIntFirstValZero() {
@@ -227,11 +226,11 @@ class MultiplicacionTest {
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
+		assertEquals(esperado, resultado,  "El resultado debe ser 0");
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el segundo parametro devuelve 0
+	 * Evalua si al introducir un valor 0 devuelve 0.
 	 */
 	@Test
 	void testMultiplicarIntIntSecondValZero() {
@@ -243,11 +242,11 @@ class MultiplicacionTest {
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2);
 		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
+		assertEquals(esperado, resultado,  "El resultado debe ser 0");
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en los dos parametros ldevuelve 0
+	 * Evalua si al introducir dos valores 0 devuelve 0.
 	 */
 	
 	@Test
@@ -264,7 +263,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor negativo en el primer patametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levanta la excepcion
 	 */
 	@Test
 	void testMultiplicarIntIntFirstValNegative() {
@@ -279,7 +278,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en el segundo patametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levanta la excepcion
 	 */
 	@Test
 	void testMultiplicarIntIntSecondValNegative() {
@@ -294,7 +293,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en los dos parametros levanta la excepcion
+	 * Evalua en el si al introducir dos valor negativo levanta la excepcion
 	 */
 	@Test
 	void testMultiplicarIntIntSecondAllNegative() {
@@ -310,7 +309,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor infinito en el primer parametro devuelve un numero positivo
+	 * Evalua si al introducir un valor infinnito devuelve un nnumero positivo.
 	 */
 	@Test
 	void testMultiplicarIntIntFirstInfinity() {
@@ -324,7 +323,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en  parametro devuelve un numero positivo
+	 * Evalua si al introducir un valor infinnito devuelve un nnumero positivo.
 	 */
 	@Test
 	void testMultiplicarIntIntSecondInfinity() {
@@ -338,7 +337,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en los dos parametros devuelve un numero positivo
+	 * Evalua si al introducir un valor infinnito devuelve un nnumero positivo.
 	 */
 	@Test
 	void testMultiplicarIntIntAllInfinity() {
@@ -352,7 +351,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor NaN en el primer parametro devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarIntIntFirstNan() {
@@ -366,7 +365,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
 	/**
-	 * Evalua si al introducir un valor NaN en el segundo parametro devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarIntIntSecondNan() {
@@ -379,20 +378,7 @@ class MultiplicacionTest {
 		// 1 Arrange - Comproba
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
-	/**
-	 * Evalua si al introducir un valor NaN en los dos parametros devuelve NaN
-	 */
-	@Test
-	void testMultiplicarIntIntAllNan() {
-		// 1 Arrange - Preparar
-		int val1 = (int) Double.NaN;
-		int val2 = (int) Double.NaN;
-		int esperado = (int) Double.NaN;
-		// 3 Act - Ejecutar
-		int resultado = Multiplicacion.multiplicar(val1, val2);
-		// 1 Arrange - Comproba
-		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
-	}
+	
 	
 	/**
 	 *  Multiplicar Double Double Double
@@ -415,16 +401,16 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el primer parametro devuelve 0
+	 * Evalua si al introducir un valor 0 devuelve 0.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstValZero() {
 		// 1 Arrange - Preparar
-		double val1 = 0.0;
+		double val1 = 0;
 		double val2 = 5.5;
 		double val3 = 8.5;
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -432,16 +418,16 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el segundo parametro devuelve 0
+	 * Evalua si al introducir un valor 0 devuelve 0.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondValZero() {
 		// 1 Arrange - Preparar
 		double val1 = 5.5;
-		double val2 = 0.0;
+		double val2 = 0;
 		double val3 = 8.5;
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -449,50 +435,16 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el tercer parametro devuelve 0
+	 * Evalua si al introducir un valor 0 devuelve 0.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdValZero() {
 		// 1 Arrange - Preparar
 		double val1 = 5.5;
 		double val2 = 8.5;
-		double val3 = 0.0;
-		double resultado;
-		double esperado = 0.0;
-		// 3 Act - Ejecutar
-		resultado = Multiplicacion.multiplicar(val1, val2, val3);
-		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
-	}
-	
-	/**
-	 * Evalua si al introducir 0 en el primer y segundo parametro devuelve 0
-	 */
-	@Test
-	void testMultiplicarDoubleDoubleDoubleFirstAndSecondValZero() {
-		// 1 Arrange - Preparar
-		double val1 = 0;
-		double val2 = 0;
-		double val3 = 8.5;
-		double resultado;
-		double esperado = 0.0;
-		// 3 Act - Ejecutar
-		resultado = Multiplicacion.multiplicar(val1, val2, val3);
-		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
-	}
-	
-	/**
-	 * Evalua si al introducir 0 en el primer y tercer parametro devuelve 0
-	 */
-	@Test
-	void testMultiplicarDoubleDoubleDoubleFirstAndThirdValZero() {
-		// 1 Arrange - Preparar
-		double val1 = 0;
-		double val2 = 8.5;
 		double val3 = 0;
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 0;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.multiplicar(val1, val2, val3);
 		// 1 Arrange - Comprobar
@@ -500,12 +452,13 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el segundo y tercer parametro devuelve 0
+	 * Evalua si al introducir tres valores 0 devuelve 0.
 	 */
+	
 	@Test
-	void testMultiplicarDoubleDoubleDoubleSecondAndThirdValZero() {
+	void testMultiplicarDoubleDoubleDoubleAllValZero() {
 		// 1 Arrange - Preparar
-		double val1 = 8.5;
+		double val1 = 0;
 		double val2 = 0;
 		double val3 = 0;
 		double resultado;
@@ -515,26 +468,9 @@ class MultiplicacionTest {
 		// 1 Arrange - Comprobar
 		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
 	}
-	/**
-	 * Evalua si al introducir 0 en los tres parametros devuelve 0
-	 */
-	
-	@Test
-	void testMultiplicarDoubleDoubleDoubleAllValZero() {
-		// 1 Arrange - Preparar
-		double val1 = 0.0;
-		double val2 = 0.0;
-		double val3 = 0.0;
-		double resultado;
-		double esperado = 0.0;
-		// 3 Act - Ejecutar
-		resultado = Multiplicacion.multiplicar(val1, val2, val3);
-		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
-	}
 	
 	/**
-	 * Evalua si al introducir un valor negativo en el primer parametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levanta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstValNegative() {
@@ -550,7 +486,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en el segundo parametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levanta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondValNegative() {
@@ -566,7 +502,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en el tercer parametro levanta la excepcion
+	 * Evalua en el si al introducir un valor negativo levanta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdValNegative() {
@@ -582,56 +518,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua si al introducir un valor negativo en el primer y tercer parametro levanta la excepcion
-	 */
-	@Test
-	void testMultiplicarDoubleDoubleDoubleFirstAndThirdValNegative() {
-		// 1 Arrange - Preparar
-		double val1 = -3.5;
-		double val2 = 5.2;
-		double val3 = -8.6;
-		try {
-			// 3 Act - Ejecutar
-			Multiplicacion.multiplicar(val1, val2, val3);
-			// 1 Arrange - Comprobar
-			fail("Se esperaba excepcion IncorrectValueException");
-		} catch(IncorrectValueException e) {}
-	}
-	/**
-	 * Evalua si al introducir un valor negativo en el primer y tercer parametro levanta la excepcion
-	 */
-	@Test
-	void testMultiplicarDoubleDoubleDoubleSecondtAndThirdValNegative() {
-		// 1 Arrange - Preparar
-		double val1 = 3.5;
-		double val2 = -5.2;
-		double val3 = -8.6;
-		try {
-			// 3 Act - Ejecutar
-			Multiplicacion.multiplicar(val1, val2, val3);
-			// 1 Arrange - Comprobar
-			fail("Se esperaba excepcion IncorrectValueException");
-		} catch(IncorrectValueException e) {}
-	}
-	/**
-	 * Evalua si al introducir un valor negativo en el primer y segundo parametro levanta la excepcion
-	 */
-	@Test
-	void testMultiplicarDoubleDoubleDoubleFirstAndSecondtdValNegative() {
-		// 1 Arrange - Preparar
-		double val1 = -3.5;
-		double val2 = -5.2;
-		double val3 = 8.6;
-		try {
-			// 3 Act - Ejecutar
-			Multiplicacion.multiplicar(val1, val2, val3);
-			// 1 Arrange - Comprobar
-			fail("Se esperaba excepcion IncorrectValueException");
-		} catch(IncorrectValueException e) {}
-	}
-	
-	/**
-	 * Evalua en el si al introducir un valor negativo en los tres parametros levanta la excepcion
+	 * Evalua en el si al introducir tres valor negativo levanta una excepcion.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllValNegative() {
@@ -648,7 +535,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 *Evalua si al introducir un valor infinito en uno de los parametros devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstInfinity() {
@@ -663,7 +550,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en uno de los parametros devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondInfinity() {
@@ -678,7 +565,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en uno de los parametros devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdInfinity() {
@@ -693,7 +580,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en los tres parametros devuelve infinito
+	 * Evalua si al introducir tres valores infinito devuelve infinito.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllInfinity() {
@@ -708,7 +595,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en uno de los parametros devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleFirstNan() {
@@ -723,7 +610,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en uno de los parametros devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleSecondNan() {
@@ -738,7 +625,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en uno de los parametros devuelve NaN
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleThirdNan() {
@@ -754,7 +641,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor infinito en los tres parametros devuelve NaN
+	 * Evalua si al introducir tres valores NaN devuelve NaN.
 	 */
 	@Test
 	void testMultiplicarDoubleDoubleDoubleAllNan() {
@@ -772,7 +659,7 @@ class MultiplicacionTest {
 	/**
 	 *  Potencia int  int
 	 *  
-	 *  Evalua si potencia devuelve un resultado correcto
+	 *  Evalua si multiplicar devuelve un resultado correcto
 	 */
 	@Test
 	void testPotenciaIntInt() {
@@ -789,7 +676,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir 0 en el primer parametro levanta la excepcion
+	 * Evalua si al introducir un valor 0 devuelvre 0.
 	 */
 	@Test
 	void testPotenciaIntIntFirstValZero() {
@@ -801,11 +688,11 @@ class MultiplicacionTest {
 		// 3 Act - Ejecutar
 		resultado =  Multiplicacion.potencia(val1, val2);
 		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
+		assertEquals(esperado, resultado,  "El resultado debe ser 0");
 	}
 	
 	/**
-	 * Evalua en el si al introducir 0 en el segundo parametro levanta la excepcion
+	 * Evalua si al introducir un valor 0 devuelve 1.
 	 */
 	@Test
 	void testPotenciaIntIntSecondValZero() {
@@ -813,15 +700,15 @@ class MultiplicacionTest {
 		double val1 = 5;
 		double val2 = 0;				
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 1;
 		// 3 Act - Ejecutar
 		resultado = (double) Multiplicacion.potencia(val1, val2);
 		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
+		assertEquals(esperado, resultado,  "El resultado debe ser 1");
 	}
 	
 	/**
-	 * Evalua en el si al introducir 0 en los dos parametros levanta la excepcion
+	 * Evalua si al introducir un valor 0 devuelve 1.
 	 */
 	
 	@Test
@@ -830,15 +717,15 @@ class MultiplicacionTest {
 		double val1 = 0;
 		double val2 = 0;				
 		double resultado;
-		double esperado = 0.0;
+		double esperado = 1;
 		// 3 Act - Ejecutar
 		resultado = Multiplicacion.potencia(val1, val2);
 		// 1 Arrange - Comprobar
-		assertEquals(esperado, resultado,  "El resultado debe ser 0.0");
+		assertEquals(esperado, resultado,  "El resultado debe ser 1");
 	}
 	
 	/**
-	 * Evalua en el si al introducir un valor negativo en el primer parametro levanta la excepcion
+	 * Evalua si al introducir un valor negativo levanta la excepcion.
 	 */
 	@Test
 	void testPotenciaIntIntFirstValNegative() {
@@ -847,13 +734,13 @@ class MultiplicacionTest {
 		double val2 = 5;				
 		try {
 			// 3 Act - Ejecutar
-			Multiplicacion.potencia(val1, val2);
+			Multiplicacion.multiplicar(val1, val2);
 			// 1 Arrange - Comprobar
 			fail("Se esperaba excepcion IncorrectValueException");
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua en el si al introducir un valor negativo en el segundo parametro levanta la excepcion
+	 * Evalua si al introducir un valor negativo levanta la excepcion.
 	 */
 	@Test
 	void testPotenciaIntIntSecondValNegative() {
@@ -868,7 +755,7 @@ class MultiplicacionTest {
 		} catch(IncorrectValueException e) {}
 	}
 	/**
-	 * Evalua en el si al introducir un valor negativo en los dos parametros levanta la excepcion
+	 * EEvalua si al introducir dos valores negativo levanta la excepcion.
 	 */
 	@Test
 	void testPotenciaIntIntSecondAllNegative() {
@@ -884,7 +771,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor infinito en el primer parametro devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito.
 	 */
 	@Test
 	void testPotenciaIntIntFirstInfinity() {
@@ -898,7 +785,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en el segundo parametro devuelve infinito
+	 * Evalua si al introducir un valor infinito devuelve infinito.
 	 */
 	@Test
 	void testPotenciaIntIntSecondInfinity() {
@@ -912,7 +799,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor infinito en los dos parametros devuelve infinito
+	 * Evalua si al introducir dos valores infinito devuelve infinito.
 	 */
 	@Test
 	void testPotenciaIntIntAllInfinity() {
@@ -926,7 +813,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser Infinito");
 	}
 	/**
-	 * Evalua si al introducir un valor nan en el primer parametro devuelve nan
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testPotenciaIntIntFirstNan() {
@@ -940,7 +827,7 @@ class MultiplicacionTest {
 		assertEquals(esperado, resultado,  "El resultado debe ser NaN");
 	}
 	/**
-	 * Evalua si al introducir un valor nan en el segundo parametro devuelve nan
+	 * Evalua si al introducir un valor NaN devuelve NaN.
 	 */
 	@Test
 	void testPotenciaIntIntSecondNan() {
@@ -955,7 +842,7 @@ class MultiplicacionTest {
 	}
 	
 	/**
-	 * Evalua si al introducir un valor nan en los dos parametros devuelve nan
+	 * Evalua si al introducir dos valores NaN devuelve NaN.
 	 */
 	@Test
 	void testPotenciaIntIntAllNan() {

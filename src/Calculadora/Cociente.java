@@ -16,7 +16,8 @@ public class Cociente {
 	/**
 	 * Division  de dos numeros reales.
 	 * <br>
-	 * <ul> Casos especiales
+	 * <p> Casos escpeciales</p>
+	 * <ul> 
 	 *  	<li> Si el primer valor es 0 el resultado sera 0
 	 *  	<li> Si el segundo valor es 0 el resultado sera 1
 	 *		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
@@ -54,7 +55,8 @@ public class Cociente {
 	/**
 	 * Division  de dos numeros enteros.
 	 * <br>
-	 * <ul> Casos especiales
+	 * <p> Casos escpeciales</p>
+	 * <ul> 
 	 *  	<li> Si el primer valor es 0 el resultado sera 0
 	 *  	<li> Si el segundo valor es 0 el resultado sera 1
 	 *		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
@@ -93,7 +95,8 @@ public class Cociente {
 	/**
 	 * Resto de la division de dos numeros enteros
 	 * <br>
-	 * <ul> Casos especiales
+	 * <p> Casos escpeciales</p>
+	 * <ul> 
 	 *  	<li> Si el primer valor es 0 levanta el resultado sera 0
 	 *  	<li> Si el segundo valor es 0 levanta el resultado sera 1
 	 *		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
@@ -132,7 +135,8 @@ public class Cociente {
 	/**
 	 * Inverso de un numero real.
 	 * <br>
-	 * <ul> Casos especiales
+	 * <p> Casos escpeciales</p>
+	 * <ul> 
 	 *  	<li> Si el parametro es 0 el resultado sera 0
 	 *		<li> Si el parametro es negativo levanta la excepcion IncorrectValueException
 	 *     	<li> Si el parametro es infinito el resultado sera infinito
@@ -160,7 +164,8 @@ public class Cociente {
 	/**
 	 * Raiz de un numero.
 	 * <br>
-	 * <ul> Casos especiales
+	 * <p> Casos especiales</p>
+	 * <ul> 
 	 *  	<li> Si el parametro es 0 el resultado sera 1
 	 *		<li> Si el parametro es negativo levanta la excepcion IncorrectValueException
 	 *     	<li> Si alguno de los valores es infinito el resultado sera infinitov

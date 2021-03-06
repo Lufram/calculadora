@@ -2,7 +2,7 @@ package Calculadora;
 
 
 /**
- * Esta clase implementar� todos los m�todos que est�n relacionados con la sumas de la calculadora.
+ * Esta clase implementaria todos los metodos que estan relacionados con la sumas de la calculadora.
  * <br>
  * Esta calculadora no admite nnumeros negativos
  * 
@@ -14,7 +14,7 @@ package Calculadora;
 public class Suma {	
 	
 	/**
-	 * Suma de dos n�meros reales.
+	 * Suma de dos numeros reales.
 	 * 
 	 * @param a Primer parametro de la suma.
 	 * @param b Segundo parametro de la suma. 
@@ -27,7 +27,7 @@ public class Suma {
 	}
 	
 	/**
-	 * Suma de dos n�meros enteros.
+	 * Suma de dos numeros enteros.
 	 * 
 	 * @param a Primer parametro de la suma.
 	 * @param b Segundo parametro de la suma.
@@ -41,7 +41,7 @@ public class Suma {
 	
 	
 	/**
-	 * Suma de tres n�meros reales.
+	 * Suma de tres numeros reales.
 	 * 
 	 * @param a Primer parametro de la suma.
 	 * @param b Segundo parametro de la suma.

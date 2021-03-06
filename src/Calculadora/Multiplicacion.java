@@ -15,7 +15,9 @@ public class Multiplicacion {
 	/**
 	 * Producto de dos numeros reales.
 	 * <br>
-	 * <ul>Casos escpeciales
+	 * <p> Casos escpeciales</p>
+	 * <ul>
+	 * 		
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
 	 * 		<li> Si alguno de los valores es infinito, el resultado sera infinito
@@ -38,7 +40,8 @@ public class Multiplicacion {
 	/**
 	 * Producto de dos numeros enteros.
 	 * <br>
-	 * <ul>Casos escpeciales
+	 * <p> Casos escpeciales</p>
+	 * <ul>
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
 	 * 		<li> Si alguno de los valores es infinito, el resultado sera un numero positivo
@@ -60,7 +63,8 @@ public class Multiplicacion {
 	/**
 	 * Producto de tres numeros reales.
 	 * <br>
-	 * <ul>Casos escpeciales
+	 * <p> Casos escpeciales</p>
+	 * <ul>
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
 	 * 		<li> Si alguno de los valores es infinito, el resultado sera infinito 
@@ -85,7 +89,8 @@ public class Multiplicacion {
 	/**
 	 * Potencia.
 	 *<br>
-	 * <ul>Casos escpeciales
+	 *<p> Casos escpeciales</p>
+	 * <ul>
 	 * 		<li> Si alguno de los parametros es 0, el resultado sera 0
 	 * 		<li> Si alguno de los valores es negativo levanta la excepcion IncorrectValueException
 	 * 		<li> Si alguno de los valores es infinito, el resultado sera infinito

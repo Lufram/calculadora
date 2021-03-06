@@ -5,7 +5,7 @@ package Calculadora;
  * restas de la calculadora. <br>
  * Esta calculadora no admite numeros negativos
  * 
- * @author
+ * @author Javier 
  * @version 1
  * 
  */
@@ -28,7 +28,7 @@ public class Resta {
 	 * <li>Si el valor de a y b es infinito, devuelve NaN.
 	 * <li>Si el valor de a o b es NaN, devuelve NaN.
 	 * <li>Si el valor de a y b es NaN, devuelve NaN.
-	 * <ul>
+	 * </ul>
 	 * 
 	 * @param a variable a la que le restaremos b.
 	 * @param b variable que restaremos a la variable a.
@@ -62,7 +62,7 @@ public class Resta {
 	 * <li>Si el valor a es NaN, devuelve un nÃºmero negativo.
 	 * <li>Si el valor b es NaN, devuelve el mismo valor que a.
 	 * <li>Si el valor de a y b es NaN, el resultado sera NaN.
-	 * <ul>
+	 * </ul>
 	 * 	
 	 * 
 	 * @param a variable a la que le restaremos b.
@@ -97,7 +97,7 @@ public class Resta {
 	 * <li>Si el valor A y B es infinito, devuelve NaN. 
 	 * <li>Si el valor B y C es infinito, devuelve un valor infinito.
 	 * <li>Si alguno de los valores de A, B o C es NaN, el resultado sera NaN.   
-	 * <ul>
+	 * </ul>
 	 * 
 	 * 
 	 * 
@@ -133,14 +133,14 @@ public class Resta {
      * <li>Si el valor acum es NaN, devuelve un numero negativo.
      * <li>Si el valor de a es NaN, devuelve el valor de acum.
      * <li>Si el valor a y acum es NaN,
+	 * </ul>
 	 *
 	 * Este metodo no se puede utilizar por que no no acepta valores negativos
 	 * 
-	 * @param a variable que restaremos al acumulado.
-	 * @return el valor acumulado menos el valor de a.
+	 * @param a variable que restaremos al acumulado
+	 * @return el valor acumulado menos el valor de a
 	 */
 
-	public static int acum = 0;
 
 	public static int restar(int a) throws IncorrectValueException {
 		if (a < 0) {
@@ -156,4 +156,5 @@ public class Resta {
 		}
 	}
 
+	public static int acum = 0;
 }
